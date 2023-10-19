@@ -1,0 +1,79 @@
+/* Keyboard.css */
+
+.keyboard {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 700px;
+    margin: 50px auto;
+  }
+  
+  .input {
+    margin: 10px 20px;
+  }
+  
+  input {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+  }
+  
+  .keys {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+
+  }
+  
+  button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+    outline: none;
+    transition: background-color 0.2s;
+  }
+  
+  /* Styling for active Shift and Caps Lock */
+  button.active {
+    background-color: #008CBA;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: #008CBA;
+    color: #fff;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  button:focus {
+    box-shadow: 0 0 5px #008CBA;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:disabled.active {
+    background-color: #008CBA;
+    color: #fff;
+  }
+  
